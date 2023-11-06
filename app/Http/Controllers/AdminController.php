@@ -32,9 +32,6 @@ class AdminController extends Controller
         $belums = count(User::where('role_id', 2)->where('status', 1)->get());
         $pilihans = Pilihan::all();
 
-        $ipm_1 = Formatur::where('id', '1')->first()->nama;
-        $ipm_2 = Formatur::where('id', '2')->first()->nama;
-
 
         $suara_ipm_1 = count(Pilihan::where('untuk', '1')->get());
         $suara_ipm_2 = count(Pilihan::where('untuk', '2')->get());
@@ -51,8 +48,6 @@ class AdminController extends Controller
             'belums',
             'sudahs',
             'pilihans',
-            'ipm_1',
-            'ipm_2',
             'suara_ipm_1',
             'suara_ipm_2',
             'suara_hw_1',
