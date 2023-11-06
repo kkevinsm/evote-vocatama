@@ -120,33 +120,6 @@
 </div>
 {{-- End Modal Import --}}
 
-{{-- Modal Import --}}
-<!-- <div class="modal fade" id="import" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <form id="modal-details" action="{{ route('formatur.import') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Import Data Calon Formatur</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="col-10" style="display:relative;">
-                        <input name="file" type="file" class="custom-file-input btn-primary" id="customFile" required>
-                        <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" form="modal-details">Import</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div> -->
-{{-- End Modal Import --}}
 
 <!-- Modal Tambah -->
 <div class="modal fade" id="tambah" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -168,6 +141,16 @@
                             <div class="col-sm-9">
                                 <input name="nama" type="text" class="form-control" id="nama" placeholder="Nama"
                                     required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="nama" class="col-sm-3 col-form-label">Role</label>
+                            <div class="col-sm-9">
+                                <select name="role" class="form-control">
+                                    <option value="ipm">IPM</option>
+                                    <option value="hw">HW</option>
+                                    <option value="ts">TS</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">

@@ -22,6 +22,7 @@ class FormaturController extends Controller
 
     public function create(Request $request)
     {
+        // return $request->role;
         $request->validate([
             'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -35,6 +36,7 @@ class FormaturController extends Controller
     
         Formatur::create([
             'nama' => $request->nama,
+            'role' => $request->role,
             'visi' => $request->visi,
             'misi' => $request->misi,
             'image' => $profileImage,

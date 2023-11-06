@@ -14,7 +14,7 @@ class GuestController extends Controller
 
     public function ipm()
     {
-        $datas = Formatur::all();
+        $datas = Formatur::where('role', 'ipm')->get();
         return view('guest.ipm', compact([
             'datas'
         ]));
@@ -22,7 +22,7 @@ class GuestController extends Controller
 
     public function hw()
     {
-        $datas = Formatur::all();
+        $datas = Formatur::where('role', 'hw')->get();
         return view('guest.hw', compact([
             'datas'
         ]));
@@ -30,7 +30,7 @@ class GuestController extends Controller
 
     public function ts()
     {
-        $datas = Formatur::all();
+        $datas = Formatur::where('role', 'ts')->get();
         return view('guest.ts', compact([
             'datas'
         ]));
