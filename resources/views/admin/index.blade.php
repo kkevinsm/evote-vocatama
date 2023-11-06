@@ -10,7 +10,7 @@
                     <div class="card-stats-items">
                         <div class="card-stats-item">
                             <div class="card-stats-item-count">{{ $formaturs->count() }}</div>
-                            <div class="card-stats-item-label">Calon Formatur</div>
+                            <div class="card-stats-item-label">Calon</div>
                         </div>
                         <div class="card-stats-item">
                             <div class="card-stats-item-count">{{ $pemilihs->count() }}</div>
@@ -38,7 +38,7 @@
         <div class="col-lg-12 col-md-4 col-sm-12">
             <div class="card card-statistic-2">
                 <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Suara Formatur</div>
+                    <div class="card-stats-title">Perolehan Suara Pemilihan Raya Spemduta</div>
                     @foreach($formaturs as $formatur)
                     <?php 
                         $jumlah = 0;

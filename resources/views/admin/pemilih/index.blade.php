@@ -13,7 +13,7 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1 style="color:#262626">Pemilih</h1>
+        <h1 style="color:#262626">Pemilih Pemilu Raya Spemduta</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Data User</a></div>
@@ -63,7 +63,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
-                            <th>Asal</th>
+                            <th>Kelas</th>
                             <th>Username</th>
                             <th>Password</th>
                             <th>Action</th>
@@ -76,7 +76,7 @@
                         <tr>
                             <td><?= $no++ ?></td>
                             <td>{{ $data->name }}</td>
-                            <td>{{ $data->asal }}</td>
+                            <td>{{ $data->Kelas }}</td>
                             <td>{{ $data->username }}</td>
                             <td>{{ $data->pass }}</td>
                             <td>
@@ -136,7 +136,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Tambah Formatur</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Tambah Pemilih</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -152,14 +152,12 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="visi" class="col-sm-3 col-form-label">Asal</label>
+                    <label for="visi" class="col-sm-3 col-form-label">Kelas</label>
                     <div class="col-sm-9">
                         <select name="asal" class="form-control">
-                            <option value="MTs Muhammadiyah 1 Taman">MTs Muhammadiyah 1 Taman</option>
-                            <option value="SMP Muhammadiyah 2 Taman">SMP Muhammadiyah 2 Taman</option>
-                            <option value="SMA Muhammadiyah 1 Taman">SMA Muhammadiyah 1 Taman</option>
-                            <option value="SMK Muhammadiyah 1 Taman">SMK Muhammadiyah 1 Taman</option>
-                            <option value="SMK Muhammadiyah 2 Taman">SMK Muhammadiyah 2 Taman</option>
+                            <option value="Kelas 7">Kelas 7</option>
+                            <option value="Kelas 8">Kelas 8</option>
+                            <option value="Kelas 9">Kelas 9</option>
                         </select>
                     </div>
                 </div>

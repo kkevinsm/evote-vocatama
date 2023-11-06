@@ -18,13 +18,13 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1 style="color:#262626">Formatur</h1>
+        <h1 style="color:#262626">Calon Pemilu Raya Spemduta</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Data User</a></div>
-            <div class="breadcrumb-item">Formatur</div>
+            <div class="breadcrumb-item">Calon Pemira</div>
         </div>
-    </div>
+    </div>  
 
     @if (session('status'))
     <div class="alert alert-success" role="alert">
@@ -47,7 +47,7 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-12">
-                    <h4 style="color:#262626">Data Calon Formatur</h4>
+                    <h4 style="color:#262626">Data Calon</h4>
                 </div>
             </div>
             <div class="col">
@@ -98,7 +98,7 @@
             <form id="modal-details" action="{{ route('formatur.import') }}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Import Data Calon Formatur</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Import Data Calon</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -154,7 +154,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Tambah Formatur</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Tambah Calon</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

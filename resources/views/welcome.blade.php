@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Evote | Pemilu Raya Ortom Spemduta</title>
+  <title>Evote | Pemira Ortom Spemduta</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -49,10 +49,10 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Evote IPM Sepanjang</a>
+            <a href="index.html">Evote Pemira Spemduta</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">IPM</a>
+            <a href="index.html">EVOTE</a>
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Dashboard</li>
@@ -64,7 +64,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Data User</span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Data Formatur</a></li>
+                  <li><a href="#">Data Calon</a></li>
                   <li><a href="#">Data Pemilih</a></li>
                 </ul>
               </li>
@@ -83,7 +83,7 @@
                   <div class="card-stats-items">
                     <div class="card-stats-item">
                       <div class="card-stats-item-count">11</div>
-                      <div class="card-stats-item-label">Calon Formatur</div>
+                      <div class="card-stats-item-label">Calon</div>
                     </div>
                     <div class="card-stats-item">
                       <div class="card-stats-item-count">75</div>

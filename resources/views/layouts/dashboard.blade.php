@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <link rel="shortcut icon" href="public/assets/img/favicon.ico">
-  <title>Evote | Pemilu Raya Ortom Spemduta</title>
+  <title>Evote | Pemira Ortom Spemduta</title>
   <link rel="icon" type="images/x-icon" href="{{asset('assets/images/evote.png')}}" />
 
   <!-- General CSS Files -->
@@ -65,10 +65,10 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Evote PC IPM Sepanjang</a>
+            <a href="index.html">Evote Pemira Spemduta</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">IPM</a>
+            <a href="index.html">SMP</a>
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Dashboard</li>
@@ -80,7 +80,7 @@
               <li class="nav-item">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i><span>Data User</span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="{{ route('formatur.index') }}">Data Formatur</a></li>
+                  <li><a href="{{ route('formatur.index') }}">Data Calon</a></li>
                   <li><a href="{{ route('pemilih.index') }}">Data Pemilih</a></li>
                 </ul>
               </li>
