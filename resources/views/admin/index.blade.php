@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 @section('content')
-<section class="section">
+<section class="section" style="min-height: 80vh;">
     <div class="row">
         <div class="col-lg-12 col-md-4 col-sm-12">
             <div class="card card-statistic-2">
@@ -34,11 +34,11 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-lg-12 col-md-4 col-sm-12">
+    <div class="row" style="display: flex; justify-content: space-evenly;">
+        <div class="col-lg-3 col-md-4 col-sm-12">
             <div class="card card-statistic-2">
                 <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Suara Pemilihan Raya Spemduta</div>
+                    <div class="card-stats-title">Perolehan Suara Ikatan Pelajar Muhammadiyah</div>
                     @foreach($formaturs as $formatur)
                     <?php 
                         $jumlah = 0;
@@ -48,17 +48,97 @@
                             }
                         }
                     ?>
+                    @endforeach
+                </div>
+            </div>
+            <canvas id="ipm"></canvas>
+        </div>
 
-<div>
-  <canvas id="myChart"></canvas>
-</div>
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card card-statistic-2">
+                <div class="card-stats">
+                    <div class="card-stats-title">Perolehan Suara Hizbul Wathan</div>
+                    @foreach($formaturs as $formatur)
+                    <?php 
+                        $jumlah = 0;
+                        foreach ($pilihans as $pilihan) {
+                            if($formatur->id == $pilihan->untuk){
+                                $jumlah++;
+                            }
+                        }
+                    ?>
+                    @endforeach
+                </div>
+            </div>
+            <canvas id="hw"></canvas>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="card card-statistic-2">
+                <div class="card-stats">
+                    <div class="card-stats-title">Perolehan Suara Tapak Suci</div>
+                    @foreach($formaturs as $formatur)
+                    <?php 
+                        $jumlah = 0;
+                        foreach ($pilihans as $pilihan) {
+                            if($formatur->id == $pilihan->untuk){
+                                $jumlah++;
+                            }
+                        }
+                    ?>
+                    @endforeach
+                </div>
+            </div>
+            <canvas id="ts"></canvas>
+        </div>
+    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
+  const ipm = document.getElementById('ipm');
+  const hw = document.getElementById('hw');
+  const ts = document.getElementById('ts');
 
-  new Chart(ctx, {
+  new Chart(ipm, {
+    type: 'pie',
+    data: {
+      labels: ['Calon 1', 'Calon 2'],
+      datasets: [{
+        label: '# of Votes',
+        data: [56,44],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  new Chart(hw, {
+    type: 'pie',
+    data: {
+      labels: ['Calon 1', 'Calon 2'],
+      datasets: [{
+        label: '# of Votes',
+        data: [56,44],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+
+  new Chart(ts, {
     type: 'pie',
     data: {
       labels: ['Calon 1', 'Calon 2'],
@@ -77,23 +157,6 @@
     }
   });
 </script>
-                    <!-- <div class="mb-4 mt-4"
-                        style="padding-top: 15px; padding-right: 25px; padding-bottom: 15px; padding-left: 25px;">
-                        <div class="text-small float-right font-weight-bold text-muted">{{ $jumlah }}</div>
-                        <div class="font-weight-bold mb-1">{{ $formatur->nama }}</div>
-                        <div class="progress" data-height="5">
-                            <div class="progress-bar" role="progressbar" data-width="{{ number_format($jumlah / ($sudahs + $belums) * 100, 2) }}%" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100"></div> -->
-                        </div>
-                    </div>
-                    @endforeach
-                    <div class="card-wrap">
-                        <div class="card-body"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </section>
 @endsection
