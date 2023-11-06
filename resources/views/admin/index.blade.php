@@ -117,13 +117,6 @@
         borderWidth: 1
       }]
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
   });
 
   new Chart(hw, {
@@ -136,13 +129,6 @@
         borderWidth: 1
       }]
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
   });
 
   new Chart(ts, {
@@ -155,13 +141,6 @@
         borderWidth: 1
       }]
     },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
   });
 </script>
 @endsection
