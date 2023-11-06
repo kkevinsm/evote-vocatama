@@ -60,7 +60,7 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-striped dt-responsive nowrap datatables py-1 px-1" id="table-1">
+                <table class="table table-striped dt-responsive nowrap datatables py-1 px-1" id="myTable">
                     <thead>
                         <tr>
                             <th style="width: 5%">No</th>

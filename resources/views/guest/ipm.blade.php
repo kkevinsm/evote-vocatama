@@ -29,9 +29,10 @@
                 <div class="card">
                     <div class="card-body text-center">
                         <div class="gallery gallery-lg">
-                            <div class="gallery-item" style="margin: 0px 0px 15px 0px" data-toggle="modal"
+                            <div class="gallery-item" style="margin: 0px 0px 15px 0px"
                                 data-target="#foto{{ $data->id }}" data-image="{{ asset('image/' . $data->image) }}"
-                                data-title="Image 1"></div>
+                                data-title="Image 1">
+                            </div>
                         </div>
                         <div class="mb-2" style="padding: 3px"><h6>{{ $data->nama }}</h6></div>
                         <div>
@@ -66,25 +67,6 @@
                     </div>
                 </div>
             </div>
-            {{-- Modal Foto --}}
-            <div class="modal fade" id="foto{{ $data->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Foto Calon Formatur</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <img class="gallery-item" src="{{ asset('image/' . $data->image) }}"
-                                style="max-width: 350px; max-height:350px;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {{-- End Modal Foto --}}
             @endforeach
         </div>
     </form>
