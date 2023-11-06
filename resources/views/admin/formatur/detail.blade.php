@@ -68,43 +68,6 @@
                                 <label>Nama Lengkap</label>
                                 <input name="nama" type="text" class="form-control" required value="{{ $data->nama }}">
                             </div>
-                            <div class="form-group">
-                                <label>Email</label>
-                                <input name="email" type="email" class="form-control" value="{{ $data->email }}">
-                            </div>
-                            <div class="form-group">
-                                <label>Tanggal Lahir</label>
-                                <input name="ttl" type="date" class="form-control" value="{{ $data->ttl }}">
-                            </div>
-                            <div class="form-group">
-                                <label>Asal Ranting/Cabang</label>
-                                    <select class="form-control" value="{{ $data->asal }}">
-                                        <option>PC IPM Sepanjang</option>
-                                        <option>MTs Muhammadiyah 1 Taman</option>
-                                        <option>SMP Muhammadiyah 2 Taman</option>
-                                        <option>SMA Muhammadiyah 1 Taman</option>
-                                        <option>SMK Muhammadiyah 1 Taman</option>
-                                        <option>SMK Muhammadiyah 2 Taman</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                            <label>Bidang</label>
-                                    <select class="form-control" value="{{ $data->bidang }}">
-                                        <option>Bidang Pengurus Harian</option>
-                                        <option>Perkaderan</option>
-                                        <option>Kajian Dakwah Islam</option>
-                                        <option>Pengkajian Ilmu Pengetahuan</option>
-                                        <option>Apresiasi Seni Budaya dan Olahraga</option>
-                                    </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Nomor Telepon Aktif</label>
-                                <input name="telp" type="number" class="form-control" value="{{ $data->telp }}">
-                            </div>
-                            <div class="form-group">
-                                <label>Riwayat Perkaderan</label>
-                                <textarea name="riwayat" class="form-control">{{ $data->riwayat }}</textarea>
-                            </div>
                             <div class="form-group mb-0">
                                 <label>Visi</label>
                                 <textarea name="visi" class="form-control" required>{{ $data->visi }}</textarea>
