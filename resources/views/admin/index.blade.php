@@ -48,13 +48,42 @@
                             }
                         }
                     ?>
-                    <div class="mb-4 mt-4"
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'pie',
+    data: {
+      labels: ['Calon 1', 'Calon 2'],
+      datasets: [{
+        label: '# of Votes',
+        data: [56,44],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+                    <!-- <div class="mb-4 mt-4"
                         style="padding-top: 15px; padding-right: 25px; padding-bottom: 15px; padding-left: 25px;">
                         <div class="text-small float-right font-weight-bold text-muted">{{ $jumlah }}</div>
                         <div class="font-weight-bold mb-1">{{ $formatur->nama }}</div>
                         <div class="progress" data-height="5">
                             <div class="progress-bar" role="progressbar" data-width="{{ number_format($jumlah / ($sudahs + $belums) * 100, 2) }}%" aria-valuenow="80"
-                                aria-valuemin="0" aria-valuemax="100"></div>
+                                aria-valuemin="0" aria-valuemax="100"></div> -->
                         </div>
                     </div>
                     @endforeach
