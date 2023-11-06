@@ -93,6 +93,13 @@
         </div>
     </div>
 
+
+
+
+</section>
+@endsection
+
+@section('js')
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -157,6 +164,4 @@
     }
   });
 </script>
-
-</section>
 @endsection
