@@ -28,9 +28,10 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="card">
                     <div class="card-body text-center">
-                        <div>
-                            <div style="margin: 0px 0px 15px 0px" data-toggle="modal"
-                                data-target="#foto{{ $data->id }}" data-image="{{ asset('image/' . $data->image) }}"></div>
+                        <div class="gallery gallery-lg">
+                            <div class="gallery-item" style="margin: 0px 0px 15px 0px" data-toggle="modal"
+                                data-target="#foto{{ $data->id }}" data-image="{{ asset('image/' . $data->image) }}"
+                                data-title="Image 1"></div>
                         </div>
                         <div class="mb-2" style="padding: 3px"><h6>{{ $data->nama }}</h6></div>
                         <div>
