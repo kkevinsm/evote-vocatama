@@ -13,7 +13,7 @@
 <section class="section">
     <form action="{{ route('guest.pilih.ts') }}" method="POST">
         <div class="section-header" style="color:#262626">
-            <h1  style="color:#262626">E-Vote Pemilu Raya Ortom Spemduta</h1>
+            <h1  style="color:#262626">Pilih Calon Ketua Ortom TS</h1>
             <div class="col">
                 <div class="float-right">
                     <button id="toastr" type="button" class="btn btn-success" onclick="toast()">Submit</button>
@@ -25,14 +25,11 @@
         @csrf
         <div class="row">
             @foreach($datas as $data)
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-12">
                 <div class="card">
                     <div class="card-body text-center">
-                        <div class="gallery gallery-md">
                             <div class="gallery-item" style="margin: 0px 0px 15px 0px" data-toggle="modal"
-                                data-target="#foto{{ $data->id }}" data-image="{{ asset('image/' . $data->image) }}"
-                                data-title="Image 1"></div>
-                        </div>
+                                data-target="#foto{{ $data->id }}" data-image="{{ asset('image/' . $data->image) }}"></div>
                         <div class="mb-2" style="padding: 3px"><h6>{{ $data->nama }}</h6></div>
                         <div>
                             <input id="pilihan{{ $data->id }}" type="checkbox" class="hidden" name="category[]"
@@ -137,7 +134,7 @@
     function toast() {
         iziToast.warning({
             title: 'Error',
-            message: 'Pilihlah 7 Calon Formatur!',
+            message: 'Pilih 1 Calon Ketua TS!',
             position: 'topCenter',
         });
     }
