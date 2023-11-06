@@ -31,13 +31,34 @@ class AdminController extends Controller
         $sudahs = count(User::where('role_id', 2)->where('status', 0)->get());
         $belums = count(User::where('role_id', 2)->where('status', 1)->get());
         $pilihans = Pilihan::all();
-        
+
+        $ipm_1 = Formatur::where('id', '1')->first()->nama;
+        $ipm_2 = Formatur::where('id', '2')->first()->nama;
+
+
+        $suara_ipm_1 = count(Pilihan::where('untuk', '1')->get());
+        $suara_ipm_2 = count(Pilihan::where('untuk', '2')->get());
+
+        $suara_hw_1 = count(Pilihan::where('untuk', '3')->get());
+        $suara_hw_2 = count(Pilihan::where('untuk', '4')->get());
+
+        $suara_ts_1 = count(Pilihan::where('untuk', '5')->get());
+        $suara_ts_2 = count(Pilihan::where('untuk', '6')->get());
+
         return view('admin.index', compact([
             'pemilihs',
             'formaturs',
             'belums',
             'sudahs',
-            'pilihans'
+            'pilihans',
+            'ipm_1',
+            'ipm_2',
+            'suara_ipm_1',
+            'suara_ipm_2',
+            'suara_hw_1',
+            'suara_hw_2',
+            'suara_ts_1',
+            'suara_ts_2',
         ]));
     }
 

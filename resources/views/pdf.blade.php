@@ -1909,14 +1909,7 @@
     }
 
     .navbar-bg {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 115px;
-    background-color: #FFC857;
-    z-index: -1;
+    background-color: #6610F2;
     }
 
     .navbar {
@@ -3685,21 +3678,53 @@
 </head>
 
 <body class="sidebar-mini">
-  <div id="app">
+<div id="app">
     <div class="main-wrapper">
-      <div class="navbar-bg"></div>
-      
       <!-- Main Content -->
-      <div class="main-content" style="width: 100%!important;padding: 50px 0px;">
-        <section class="section">
-            <div class="card">
-                <!-- <div class="card-header">
-                    <div class="row">
-                        <div class="col-12">
-                            <h4 style="color:#262626">Data Pemilih</h4>
+      <div class="main-content" style="padding: 80px 30px 0px 80px;">
+      <section class="section">
+          <div class="row">
+            @foreach($datas as $data)
+            <div class="card" style="height: 250px; width: 250px; margin: 5px;">
+                <div class="row" style="margin: 5px;">
+                    <div class="card-header">
+                        <h4 style="color:#262626">Detail Calon Formatur</h4>
+                    </div>
+                    <div class="card-body mb-0" style="margin-bottom: 0;">
+                        <div class="form-group mb-0" style="margin-bottom: 0;">
+                            <label>Nama Lengkap</label>
+                            <label>{{ $data->nama }}</label>
+                        </div>
+                        <div class="form-group mb-0" style="margin-bottom: 0;">
+                            <label>Username: </label>
+                            <label>{{ $data->username }}</label>
+                        </div>
+                        <div class="form-group mb-0" style="margin-bottom: 0;">
+                            <label>Password: </label>
+                            <label>{{ $data->pass }}</label>
                         </div>
                     </div>
-                </div> -->
+                </div>
+            </div>
+            @endforeach
+          </div>
+        </section>
+      </div>
+      <!-- <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; 2023 <div class="bullet"></div> Made with ❤️ By <a href="#">Hangker Sepanjang</a>
+        </div>
+        <div class="footer-right">
+        </div>
+      </footer> -->
+    </div>
+  </div>
+  <!-- <div id="app">
+    <div class="main-wrapper">
+      <div class="navbar-bg"></div>
+      <div class="main-content" style="width: 100%!important;padding: 50px 30px;">
+        <section class="section">
+            <div class="card">
                 <div class="card-body" style="padding: 0px;">
                     <div class="table-responsive">
                         <table class="table table-striped" id="table-1">
@@ -3747,6 +3772,6 @@
         </div>
       </footer>
     </div>
-  </div>
+  </div> -->
 </body>
 </html>
