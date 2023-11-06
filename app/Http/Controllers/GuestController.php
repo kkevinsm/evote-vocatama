@@ -20,7 +20,31 @@ class GuestController extends Controller
         ]));
     }
 
-    public function pilih(Request $request)
+    public function ipm(Request $request)
+    {
+        foreach ($request->category as $value){
+            Pilihan::create([
+                'dari' => Auth::user()->id,
+                'untuk' => $value,
+            ]);
+        }        
+
+        return redirect()->route('guest.hw')->with('status', 'Terimakasih telah memilih!');
+    }
+
+    public function hw(Request $request)
+    {
+        foreach ($request->category as $value){
+            Pilihan::create([
+                'dari' => Auth::user()->id,
+                'untuk' => $value,
+            ]);
+        }
+
+        return redirect()->route('guest.ts')->with('status', 'Terimakasih telah memilih!');
+    }
+
+    public function ts(Request $request)
     {
         foreach ($request->category as $value){
             Pilihan::create([

@@ -16,12 +16,8 @@ class CreateFormatursTable extends Migration
         Schema::create('formaturs', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->date('ttl')->nullable();
-            $table->string('asal')->nullable();
-            $table->string('bidang')->nullable();
-            $table->string('telp')->nullable();
-            $table->string('email')->nullable()->unique();
-            $table->string('riwayat')->nullable();
+            $table->date('kelas')->nullable();
+            $table->string('role')->nullable();
             $table->string('visi')->nullable();
             $table->string('misi')->nullable();
             $table->string('image')->nullable();
