@@ -11,7 +11,7 @@
 
 @section('content')
 <section class="section">
-    <form action="{{ route('guest.ipm') }}" method="POST">
+    <form action="{{ route('guest.pilih.ts') }}" method="POST">
         <div class="section-header" style="color:#262626">
             <h1  style="color:#262626">E-Vote Pemilu Raya Ortom Spemduta</h1>
             <div class="col">
