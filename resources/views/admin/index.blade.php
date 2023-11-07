@@ -110,7 +110,7 @@
   new Chart(ipm, {
     type: 'pie',
     data: {
-      labels: ['Dawwas Inha Ulhaq' , 'Satrio Wicaksono'],
+      labels: ['RIZKA' , 'ERLANGGA'],
       datasets: [{
         label: '# jumlah suara',
         data: [{{ $suara_ipm_1 }}, {{ $suara_ipm_2 }}],
@@ -122,9 +122,9 @@
   new Chart(hw, {
     type: 'pie',
     data: {
-      labels: ['Calon 1', 'Calon 2'],
+      labels: ['KIRAN', 'ZHAFRAN'],
       datasets: [{
-        label: '# of Votes',
+        label: '# jumlah suar',
         data: [{{ $suara_hw_1 }},{{ $suara_hw_2 }}],
         borderWidth: 1
       }]
@@ -134,9 +134,9 @@
   new Chart(ts, {
     type: 'pie',
     data: {
-      labels: ['Calon 1', 'Calon 2'],
+      labels: ['ALFATH', 'RIZKY'],
       datasets: [{
-        label: '# of Votes',
+        label: '# jumlah suar',
         data: [{{ $suara_ts_1 }},{{ $suara_ts_2 }}],
         borderWidth: 1
       }]
