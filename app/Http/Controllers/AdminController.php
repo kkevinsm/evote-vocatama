@@ -31,13 +31,68 @@ class AdminController extends Controller
         $sudahs = count(User::where('role_id', 2)->where('status', 0)->get());
         $belums = count(User::where('role_id', 2)->where('status', 1)->get());
         $pilihans = Pilihan::all();
+
+        $suara_ipm_1 = count(Pilihan::where('untuk', '1')->get());
+        $suara_ipm_2 = count(Pilihan::where('untuk', '2')->get());
+        $suara_ipm_3 = count(Pilihan::where('untuk', '3')->get());
+        $suara_ipm_4 = count(Pilihan::where('untuk', '4')->get());
+        $suara_ipm_5 = count(Pilihan::where('untuk', '5')->get());
+
+        $suara_ipm_6 = count(Pilihan::where('untuk', '6')->get());
+        $suara_ipm_7 = count(Pilihan::where('untuk', '7')->get());
+        $suara_ipm_8 = count(Pilihan::where('untuk', '8')->get());
+        $suara_ipm_9 = count(Pilihan::where('untuk', '9')->get());
+        $suara_ipm_10 = count(Pilihan::where('untuk', '10')->get());
+
+        $suara_ipm_11 = count(Pilihan::where('untuk', '11')->get());
+        $suara_ipm_12 = count(Pilihan::where('untuk', '12')->get());
+        $suara_ipm_13 = count(Pilihan::where('untuk', '13')->get());
+        $suara_ipm_14 = count(Pilihan::where('untuk', '14')->get());
+        $suara_ipm_15 = count(Pilihan::where('untuk', '15')->get());
+
+        $suara_ipm_16 = count(Pilihan::where('untuk', '16')->get());
+        $suara_ipm_17 = count(Pilihan::where('untuk', '17')->get());
+        $suara_ipm_18 = count(Pilihan::where('untuk', '18')->get());
+        $suara_ipm_19 = count(Pilihan::where('untuk', '19')->get());
+        $suara_ipm_20 = count(Pilihan::where('untuk', '20')->get());
+
+        $suara_ipm_21 = count(Pilihan::where('untuk', '21')->get());
+        $suara_ipm_22 = count(Pilihan::where('untuk', '22')->get());
+        $suara_ipm_23 = count(Pilihan::where('untuk', '23')->get());
+        $suara_ipm_24 = count(Pilihan::where('untuk', '24')->get());
+        $suara_ipm_25 = count(Pilihan::where('untuk', '25')->get());
         
         return view('admin.index', compact([
             'pemilihs',
             'formaturs',
             'belums',
             'sudahs',
-            'pilihans'
+            'pilihans',
+            'suara_ipm_1',
+            'suara_ipm_2',
+            'suara_ipm_3',
+            'suara_ipm_4',
+            'suara_ipm_5',
+            'suara_ipm_6',
+            'suara_ipm_7',
+            'suara_ipm_8',
+            'suara_ipm_9',
+            'suara_ipm_10',
+            'suara_ipm_11',
+            'suara_ipm_12',
+            'suara_ipm_13',
+            'suara_ipm_14',
+            'suara_ipm_15',
+            'suara_ipm_16',
+            'suara_ipm_17',
+            'suara_ipm_18',
+            'suara_ipm_19',
+            'suara_ipm_20',
+            'suara_ipm_21',
+            'suara_ipm_22',
+            'suara_ipm_23',
+            'suara_ipm_24',
+            'suara_ipm_25',
         ]));
     }
 

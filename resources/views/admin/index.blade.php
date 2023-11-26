@@ -35,10 +35,10 @@
     </div>
 
     <div class="row" style="display: flex; justify-content: space-evenly;">
-        <div class="col-lg-3 col-md-4 col-sm-12">
+        <div class="col-lg-12 col-md-4 col-sm-12">
             <div class="card card-statistic-2">
                 <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Suara Ikatan Pelajar Muhammadiyah</div>
+                    <div class="card-stats-title">Perolehan Calon Formatur IPM VOCATAMA</div>
                     @foreach($formaturs as $formatur)
                     <?php 
                         $jumlah = 0;
@@ -53,49 +53,7 @@
             </div>
             <canvas id="ipm"></canvas>
         </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card card-statistic-2">
-                <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Suara Hizbul Wathan</div>
-                    @foreach($formaturs as $formatur)
-                    <?php 
-                        $jumlah = 0;
-                        foreach ($pilihans as $pilihan) {
-                            if($formatur->id == $pilihan->untuk){
-                                $jumlah++;
-                            }
-                        }
-                    ?>
-                    @endforeach
-                </div>
-            </div>
-            <canvas id="hw"></canvas>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-sm-12">
-            <div class="card card-statistic-2">
-                <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Suara Tapak Suci</div>
-                    @foreach($formaturs as $formatur)
-                    <?php 
-                        $jumlah = 0;
-                        foreach ($pilihans as $pilihan) {
-                            if($formatur->id == $pilihan->untuk){
-                                $jumlah++;
-                            }
-                        }
-                    ?>
-                    @endforeach
-                </div>
-            </div>
-            <canvas id="ts"></canvas>
-        </div>
     </div>
-
-
-
-
 </section>
 @endsection
 
@@ -104,42 +62,25 @@
 
 <script>
   const ipm = document.getElementById('ipm');
-  const hw = document.getElementById('hw');
-  const ts = document.getElementById('ts');
 
   new Chart(ipm, {
-    type: 'pie',
+    type: 'bar',
     data: {
-      labels: ['Calon 1', 'Calon 2'],
+      labels: [ ],
       datasets: [{
         label: '# of Votes',
-        data: [56,44],
+        data: [
+        {{ $suara_ipm_1 }}, {{ $suara_ipm_2 }}, {{ $suara_ipm_3 }}, {{ $suara_ipm_4 }}, {{ $suara_ipm_5 }},
+        {{ $suara_ipm_6 }}, {{ $suara_ipm_7 }}, {{ $suara_ipm_8 }}, {{ $suara_ipm_9 }}, {{ $suara_ipm_10 }},
+        {{ $suara_ipm_11 }}, {{ $suara_ipm_12 }}, {{ $suara_ipm_13 }}, {{ $suara_ipm_4 }}, {{ $suara_ipm_15 }},
+        {{ $suara_ipm_16 }}, {{ $suara_ipm_17 }}, {{ $suara_ipm_18 }}, {{ $suara_ipm_19 }}, {{ $suara_ipm_20 }},
+        {{ $suara_ipm_21 }}, {{ $suara_ipm_22 }}, {{ $suara_ipm_23 }}, {{ $suara_ipm_24 }}, {{ $suara_ipm_25 }},
+        ],
         borderWidth: 1
       }]
     },
-  });
-
-  new Chart(hw, {
-    type: 'pie',
-    data: {
-      labels: ['Calon 1', 'Calon 2'],
-      datasets: [{
-        label: '# of Votes',
-        data: [56,44],
-        borderWidth: 1
-      }]
-    },
-  });
-
-  new Chart(ts, {
-    type: 'pie',
-    data: {
-      labels: ['Calon 1', 'Calon 2'],
-      datasets: [{
-        label: '# of Votes',
-        data: [56,44],
-        borderWidth: 1
-      }]
+    options: {
+    indexAxis: 'y',
     },
   });
 </script>

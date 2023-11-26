@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <link rel="shortcut icon" href="public/assets/img/favicon.ico">
-  <title>Evote | Pemira Ortom Spemduta</title>
+  <title>Evote | VOCATAMA</title>
   <link rel="icon" type="images/x-icon" href="{{asset('assets/images/evote.png')}}" />
 
   <!-- General CSS Files -->
@@ -65,7 +65,7 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Evote Pemira Spemduta</a>
+            <a href="index.html">Evote VOCATAMA</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">SMP</a>
