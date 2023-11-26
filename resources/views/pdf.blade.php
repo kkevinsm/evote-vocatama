@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <link rel="shortcut icon" href="public/assets/img/favicon.ico">
+  <link rel="shortcut icon" href="{{asset('public/assets/img/favicon.ico')}}">
   <title>Evote | Musycab</title>
-  <link rel="icon" type="images/x-icon" href="{{asset('assets/images/evote.png')}}" />
+  <link rel="icon" type="images/x-icon" href="{{asset('public/assets/images/evote.png')}}" />
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -3681,19 +3681,19 @@
 <div id="app">
     <div class="main-wrapper">
       <!-- Main Content -->
-      <div class="main-content" style="padding: 80px 30px 0px 80px;">
+      <div class="main-content" style="padding: 5px 30px 0px 80px;">
       <section class="section">
           <div class="row">
             @foreach($datas as $data)
-            <div class="card" style="height: 250px; width: 250px; margin: 5px;">
+            <div class="card" style="height: 250px; width: 250px; margin: 5px; border: 1px solid #000;">
                 <div class="row" style="margin: 5px;">
                     <div class="card-header">
-                        <h4 style="color:#262626">Detail Calon Formatur</h4>
+                        <h4 style="color:#262626">Akun Pemilih {{ $data->asal }}</h4>
                     </div>
                     <div class="card-body mb-0" style="margin-bottom: 0;">
                         <div class="form-group mb-0" style="margin-bottom: 0;">
                             <label>Nama Lengkap</label>
-                            <label>{{ $data->nama }}</label>
+                            <label><b>{{ $data->nama }}</b></label>
                         </div>
                         <div class="form-group mb-0" style="margin-bottom: 0;">
                             <label>Username: </label>
@@ -3710,67 +3710,6 @@
           </div>
         </section>
       </div>
-      <!-- <footer class="main-footer">
-        <div class="footer-left">
-          Copyright &copy; 2023 <div class="bullet"></div> Made with ❤️ By <a href="#">Hangker Sepanjang</a>
-        </div>
-        <div class="footer-right">
-        </div>
-      </footer> -->
-    </div>
-  </div>
-  <!-- <div id="app">
-    <div class="main-wrapper">
-      <div class="navbar-bg"></div>
-      <div class="main-content" style="width: 100%!important;padding: 50px 30px;">
-        <section class="section">
-            <div class="card">
-                <div class="card-body" style="padding: 0px;">
-                    <div class="table-responsive">
-                        <table class="table table-striped" id="table-1">
-                            <thead>
-                                <tr>
-                                    <th>No</th>
-                                    <th>Nama</th>
-                                    <th>Asal</th>
-                                    <th>Username</th>
-                                    <th>Password</th>
-                                    <th style="text-align:center;">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php $no = 1; ?>
-                                @foreach($datas as $data)
-                                <tr>
-                                    <td><?= $no++ ?></td>
-                                    <td>{{ $data->nama }}</td>
-                                    <td>{{ $data->asal }}</td>
-                                    <td>{{ $data->username }}</td>
-                                    <td>{{ $data->pass }}</td>
-                                    <td style="text-align:center;">
-                                    @if($data->status == 1)
-                                        <div class="badge badge-success">Active</div>
-                                    @else
-                                        <div class="badge badge-danger">Not Active</div>
-                                    @endif
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-      </div>
-      <footer class="main-footer">
-        <div class="footer-left">
-          Copyright &copy; 2023 <div class="bullet"></div> Design By <a href="#">Hangker Sepanjang</a>
-        </div>
-        <div class="footer-right">
-        </div>
-      </footer>
     </div>
   </div> -->
 </body>

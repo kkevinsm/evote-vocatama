@@ -13,7 +13,7 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1 style="color:#262626">Pemilih Pemilu Raya Spemduta</h1>
+        <h1 style="color:#262626">Pemilih VOCATAMA</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Data User</a></div>
@@ -63,7 +63,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
-                            <th>Kelas</th>
+                            <th>Role</th>
                             <th>Username</th>
                             <th>Password</th>
                             <th>Action</th>
@@ -76,7 +76,7 @@
                         <tr>
                             <td><?= $no++ ?></td>
                             <td>{{ $data->name }}</td>
-                            <td>{{ $data->Kelas }}</td>
+                            <td>{{ $data->asal }}</td>
                             <td>{{ $data->username }}</td>
                             <td>{{ $data->pass }}</td>
                             <td>
@@ -152,13 +152,9 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="visi" class="col-sm-3 col-form-label">Kelas</label>
+                    <label for="nama" class="col-sm-3 col-form-label">Role</label>
                     <div class="col-sm-9">
-                        <select name="asal" class="form-control">
-                            <option value="Kelas 7">Kelas 7</option>
-                            <option value="Kelas 8">Kelas 8</option>
-                            <option value="Kelas 9">Kelas 9</option>
-                        </select>
+                        <input name="nama" type="text" class="form-control" id="nama" placeholder="Nama" required>
                     </div>
                 </div>
             </div>

@@ -18,11 +18,11 @@
 @section('content')
 <section class="section">
     <div class="section-header">
-        <h1 style="color:#262626">Calon Pemilu Raya Spemduta</h1>
+        <h1 style="color:#262626">Calon Formatur IPM VOCATAMA</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Data User</a></div>
-            <div class="breadcrumb-item">Calon Pemira</div>
+            <div class="breadcrumb-item">Calon VOCATAMA</div>
         </div>
     </div>  
 
