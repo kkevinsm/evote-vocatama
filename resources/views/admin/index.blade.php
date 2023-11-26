@@ -3,7 +3,7 @@
 @section('content')
 <section class="section" style="min-height: 80vh;">
     <div class="row">
-        <div class="col-lg-12 col-md-4 col-sm-12">
+        <div class="col-lg-12 ">
             <div class="card card-statistic-2">
                 <div class="card-stats">
                     <div class="card-stats-title">Statistik</div>
@@ -38,7 +38,7 @@
         <div class="col-lg-12 col-md-4 col-sm-12">
             <div class="card card-statistic-2">
                 <div class="card-stats">
-                    <div class="card-stats-title">Perolehan Calon Formatur IPM VOCATAMA</div>
+                    <div class="card-stats-title">Perolehan Suara Calon Formatur IPM VOCATAMA</div>
                     @foreach($formaturs as $formatur)
                     <?php 
                         $jumlah = 0;
@@ -66,8 +66,35 @@
   new Chart(ipm, {
     type: 'bar',
     data: {
-      labels: [ ],
+      labels: [
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+        'ERLANGGA',
+        'RIZKA' ,
+      ],
       datasets: [{
+        axis: 'y',
         label: '# of Votes',
         data: [
         {{ $suara_ipm_1 }}, {{ $suara_ipm_2 }}, {{ $suara_ipm_3 }}, {{ $suara_ipm_4 }}, {{ $suara_ipm_5 }},
@@ -76,7 +103,33 @@
         {{ $suara_ipm_16 }}, {{ $suara_ipm_17 }}, {{ $suara_ipm_18 }}, {{ $suara_ipm_19 }}, {{ $suara_ipm_20 }},
         {{ $suara_ipm_21 }}, {{ $suara_ipm_22 }}, {{ $suara_ipm_23 }}, {{ $suara_ipm_24 }}, {{ $suara_ipm_25 }},
         ],
-        borderWidth: 1
+        backgroundColor: [
+        'rgba(255, 99, 132)',
+        'rgba(255, 159, 64)',
+        'rgba(75, 192, 192)',
+        'rgba(54, 162, 235)',
+        'rgba(153, 102, 255)',
+        'rgba(255, 99, 132)',
+        'rgba(255, 159, 64)',
+        'rgba(75, 192, 192)',
+        'rgba(54, 162, 235)',
+        'rgba(153, 102, 255)',
+        'rgba(255, 99, 132)',
+        'rgba(255, 159, 64)',
+        'rgba(75, 192, 192)',
+        'rgba(54, 162, 235)',
+        'rgba(153, 102, 255)',
+        'rgba(255, 99, 132)',
+        'rgba(255, 159, 64)',
+        'rgba(75, 192, 192)',
+        'rgba(54, 162, 235)',
+        'rgba(153, 102, 255)',
+        'rgba(255, 99, 132)',
+        'rgba(255, 159, 64)',
+        'rgba(75, 192, 192)',
+        'rgba(54, 162, 235)',
+        'rgba(153, 102, 255)',
+        ],
       }]
     },
     options: {
