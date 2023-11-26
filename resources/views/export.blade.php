@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card-header">
-                                <h4 style="color:#262626">Detail Calon Formatur</h4>
+                                <h4 style="color:#262626">Detail Calon</h4>
                             </div>
                         </div>
                         <div class="col-5 text-center gallery" style="align-items: flex-start!important;">

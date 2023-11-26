@@ -11,7 +11,7 @@
 
 @section('content')
 <section class="section">
-    <form action="{{ route('guest.pilih.ipm') }}" method="POST">
+    <form action="{{ route('guest.submit') }}" method="POST">
         <div class="section-header" style="color:#262626">
             <h1  style="color:#262626">Pilih Calon Formatur IPM VOCATAMA</h1>
             <div class="col">

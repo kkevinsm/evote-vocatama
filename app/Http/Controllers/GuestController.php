@@ -80,5 +80,35 @@ class GuestController extends Controller
     {
         return view('guest.terimakasih');
     }
+
+    public function submit(Request $request)
+    {
+        foreach ($request->category as $value){
+            Pilihan::create([
+                'dari' => Auth::user()->id,
+                'untuk' => $value,
+            ]);
+        }        
+
+        User::where('id', Auth::user()->id)->update([
+            'status' => 0,
+        ]);
+
+        return redirect()->route('terimakasih')->with('status', 'Terimakasih telah memilih!');
+    }
+
+    // public function logout()
+    // {
+    //     $user = Auth::user();
+
+    //     return $user;
+    //     $user->status = 0;
+
+    //     User::where('id', $user->id)->update([
+    //         'status' => 0,
+    //     ]);
+
+    //     return view('logout');
+    // }
 }
 
