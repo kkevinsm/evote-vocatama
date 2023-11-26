@@ -41,12 +41,13 @@
                             </p>
                               <div>
                                 <a class="dropdown-item has-icon btn-danger" href="{{ route('logout') }}"  style="color:#fff"
-                                  onclick="event.preventDefault();
-                                  document.getElementById('logout-form').submit();">
-                                <i class="fas fa-sign-out-alt"></i>Logout
+                                    onclick="event.preventDefault();
+                                    document.getElementById('logout-form').submit();">
+                                  <i class="fas fa-sign-out-alt"></i>Logout
                                 </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="">
                                     @csrf
+                                    <!-- <button class="btn btn-danger"><i class="fas fa-sign-out-alt"></i>Logout</button> -->
                                 </form>
                               </div>
                             </div>

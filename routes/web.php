@@ -6,6 +6,7 @@ use App\Http\Controllers\GuestController;
 use App\Http\Controllers\FormaturController;
 use App\Http\Controllers\PemilihController;
 use App\Http\Controllers\Admin\AdminAuthController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -59,6 +60,11 @@ Route::get('/guest/ts', [GuestController::class, 'ts'])->name('guest.ts');
 Route::post('/guest/pilih/ts', [GuestController::class, 'pilihts'])->name('guest.pilih.ts');
 Route::get('/guest/terimakasih', [GuestController::class, 'terimakasih'])->name('terimakasih');
 
+Route::post('/guest/pilih', [GuestController::class, 'submit'])->name('guest.submit');
+// Route::post('/guest/logout', [GuestController::class, 'logout'])->name('guest.logout');
+Route::get('hangker', function() {
+    return view('hangker');
+});
 
 
 

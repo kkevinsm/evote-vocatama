@@ -51,4 +51,13 @@ class LoginController extends Controller
         // dd(property_exists($this, 'username') ? $this->username : 'email');
         return property_exists($this, 'username') ? $this->username : $this->email;
     }
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->invalidate();
+
+        return $this->loggedOut($request) ?: redirect('/hangker'); 
+    }
 }
