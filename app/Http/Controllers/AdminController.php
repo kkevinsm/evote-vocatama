@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
 use App\Imports\UsersImport;
 use App\Imports\PemilihsImport;
+use App\Models\Pemilih;
 
 class AdminController extends Controller
 {
@@ -169,7 +170,16 @@ class AdminController extends Controller
 
     public function import()
     {
-        Excel::import(new PemilihsImport,request()->file('file'));
+        $data = Pemilih::all();
+        Excel::store(new PemilihsImport($data), 'output.pdf', 'public', null, [
+            'excel' => [
+                'pdf' => [
+                    'paper_size' => 'A4',
+                ],
+            ],
+        ]);
+
+        // Excel::import(new PemilihsImport,request()->file('file'));
 
         return redirect()->back();
     }

@@ -3681,7 +3681,7 @@
 <div id="app">
     <div class="main-wrapper">
       <!-- Main Content -->
-      <div class="main-content" style="padding: 5px 30px 0px 80px;">
+      <div class="main-content" style="padding: 15px 30px 0px 80px;">
       <section class="section">
           <div class="row">
             @foreach($datas as $data)
