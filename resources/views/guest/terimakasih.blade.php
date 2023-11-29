@@ -37,7 +37,7 @@
                             </div>
                             <h2>Terima kasih!</h2>
                             <p class="lead">
-                                Semoga PC IPM Sepanjang dapat melanjutkan tongkat estafet perjuangan yang lebih baik lagi.
+                                Semoga IPM VOCATAMA dapat melanjutkan tongkat estafet perjuangan yang lebih baik lagi!
                             </p>
                               <div>
                                 <a class="dropdown-item has-icon btn-danger" href="{{ route('logout') }}"  style="color:#fff"

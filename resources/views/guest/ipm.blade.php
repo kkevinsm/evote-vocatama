@@ -103,7 +103,7 @@
 
         var submitButton = document.getElementById('submitVote');
 
-        if (count === 1) {
+        if (count === 9) {
             submitButton.disabled = false;
             document.getElementById("toastr").classList.add("hidden");
             document.getElementById("submitVote").classList.remove("hidden");
@@ -119,7 +119,7 @@
     function toast() {
         iziToast.warning({
             title: 'Error',
-            message: 'Pilih 1 Calon Ketua IPM!',
+            message: 'Harus Pilih 9 Calon Formatur!',
             position: 'topCenter',
         });
     }
