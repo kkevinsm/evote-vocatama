@@ -54,10 +54,6 @@ Route::middleware(['admin'])->group(function() {
 // Guest
 Route::get('/guest/ipm', [GuestController::class, 'ipm'])->name('guest.index');
 Route::post('/guest/pilih/ipm', [GuestController::class, 'pilihipm'])->name('guest.pilih.ipm');
-Route::get('/guest/hw', [GuestController::class, 'hw'])->name('guest.hw');
-Route::post('/guest/pilih/hw', [GuestController::class, 'pilihhw'])->name('guest.pilih.hw');
-Route::get('/guest/ts', [GuestController::class, 'ts'])->name('guest.ts');
-Route::post('/guest/pilih/ts', [GuestController::class, 'pilihts'])->name('guest.pilih.ts');
 Route::get('/guest/terimakasih', [GuestController::class, 'terimakasih'])->name('terimakasih');
 
 Route::post('/guest/pilih', [GuestController::class, 'submit'])->name('guest.submit');
