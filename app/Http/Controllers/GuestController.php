@@ -14,7 +14,7 @@ class GuestController extends Controller
 
     public function ipm()
     {
-        $datas = Formatur::where('role', 'ipm')->get();
+        $datas = Formatur::all()->get();
         return view('guest.ipm', compact([
             'datas'
         ]));
