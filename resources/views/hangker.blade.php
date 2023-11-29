@@ -23,19 +23,76 @@
 
   <!-- CSS Tambahan -->
   @yield('head')
+
+  <style>
+    @media only screen and (max-width: 500px) {
+        #app{
+            max-height: 100vh;
+        }
+        .tampilan {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 150px 0px 0px 0px;
+        }
+
+        .items-profile-hangker {
+            margin-top: 10px;
+        }
+
+        .section {
+            height: auto;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        .tampilan {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 120vh;
+            margin: 0px;
+        }
+
+        .items-profile-hangker {
+            margin-top: 10px;
+        }
+
+        .section-1 {
+            margin-top: 50px;
+        }
+        .section {
+            height: 150vh!important;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px!important;
+        }
+        .main-footer {
+            margin: 0!important;
+        }
+    }
+  </style>
 </head>
 
 <body class="sidebar-mini">
-  <div id="app">
+  <div id="app" class="">
     <div class="main-wrapper">
 
-    <section style="font-family: Montserrat" class=" bg-[#071e34] font-medium  h-screen ">
+    <section style="font-family: Montserrat; height: 100vh" class="section bg-[#071e34] font-medium">
         <div class="flex items-center justify-center h-5 w-screen text-white">
-            <div class="mt-40 text-[50px]">Meet Our Team</div>
+            <div class="header mt-40 text-[50px]">
+                <p>Meet Our Team</p>
+            </div>
         </div>
 
-        <div class="flex items-center justify-center w-screen h-[85%]">
-            <section class="w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
+        <div class="tampilan flex items-center justify-center w-screen h-[85%]">
+            <section class="items-profile-hangker section-1 w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
                 <div class="flex items-center justify-between">
                     <span class="text-gray-400 text-xs">Chief Marketing Officer</span>
                     <span class="text-emerald-400">
@@ -44,27 +101,24 @@
                     </svg>
                     </span>
                 </div>
-                <div class="mt-6 w-fit mx-auto">
-                    <img src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" class="rounded-full w-28 " alt="profile picture" srcset="">
-                </div>
 
                 <div class="mt-8 flex justify-center ">
                     <h2 class="text-white font-bold text-2xl tracking-wide">Ishlah Rizky</h2>
                 </div>
                 <div class="flex text-white justify-center h-5 my-4">
-                    <a href="https://wa.me/6281357281859" target="_blank">
+                    <a href="https://wa.me/6288805454700" target="_blank">
                         <i class="fa-brands fa-whatsapp mx-2 fa-2xl " style="color: #ffffff;"></i>
                     </a>
-                    <a href="https://www.instagram.com/dawwas.inha/" target="_blank">
+                    <a href="https://www.instagram.com/ishlahyt/" target="_blank">
                         <i class="fa-brands fa-instagram mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
-                    <a href="">
+                    <a href="#">
                         <i class="fa-brands fa-linkedin mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
                 </div>
             </section>
 
-            <section class="w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
+            <section class="items-profile-hangker w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
                 <div class="flex items-center justify-between">
                     <span class="text-gray-400 text-xs">Chief Operational Officer</span>
                     <span class="text-emerald-400">
@@ -73,27 +127,24 @@
                     </svg>
                     </span>
                 </div>
-                <div class="mt-6 w-fit mx-auto">
-                    <img src="https://api.lorem.space/image/face?w=120&h=120&hash=bart89fe" class="rounded-full w-28 " alt="profile picture" srcset="">
-                </div>
 
                 <div class="mt-8 flex justify-center ">
                     <h2 class="text-white font-bold text-2xl tracking-wide">Kevin Safrisal</h2>
                 </div>
                 <div class="flex text-white justify-center h-5 my-4">
-                    <a href="https://wa.me/6281357281859" target="_blank">
+                    <a href="https://wa.me/6282132609848" target="_blank">
                         <i class="fa-brands fa-whatsapp mx-2 fa-2xl " style="color: #ffffff;"></i>
                     </a>
-                    <a href="https://www.instagram.com/dawwas.inha/" target="_blank">
+                    <a href="https://www.instagram.com/kkevinsm/" target="_blank">
                         <i class="fa-brands fa-instagram mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
-                    <a href="">
+                    <a href="https://www.linkedin.com/in/kevin-safrisal-740502242/" target="_blank">
                         <i class="fa-brands fa-linkedin mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
                 </div>
             </section>
 
-            <section class="w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
+            <section class="items-profile-hangker w-64 bg-[#20354b] rounded-2xl px-8 py-6 shadow-lg mx-[50px]">
                 <div class="flex items-center justify-between">
                     <span class="text-gray-400 text-xs">Chief Technology Officer</span>
                     <span class="text-emerald-400">
@@ -101,9 +152,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                     </svg>
                     </span>
-                </div>
-                <div class="mt-6 w-fit mx-auto">
-                    <img src="{{ asset('assets/img/dawwas.jpeg') }}" class="rounded-full w-28 " alt="profile picture" srcset="">
                 </div>
 
                 <div class="mt-8 flex justify-center ">
@@ -117,14 +165,14 @@
                     <a href="https://www.instagram.com/dawwas.inha/" target="_blank">
                         <i class="fa-brands fa-instagram mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
-                    <a href="">
+                    <a href="#" target="_blank">
                         <i class="fa-brands fa-linkedin mx-2 fa-2xl" style="color: #ffffff;"></i>
                     </a>
                 </div>
             </section>
         </div>
         
-        <footer class="main-footer">
+        <footer class="main-footer footerku">
             <div class="footer-left">
             Copyright &copy; 2023 <div class="bullet"></div> Made with ❤️ By <a href="#">Hangker Sepanjang</a>
             </div>

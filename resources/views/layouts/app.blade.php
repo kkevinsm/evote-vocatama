@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Evote | Pemira Ortom Spemduta</title>
+    <link rel="icon" type="images/x-icon" href="{{asset('assets/images/evote.png')}}" />
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
