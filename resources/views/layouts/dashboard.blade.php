@@ -68,7 +68,7 @@
             <a href="index.html">Evote VOCATAMA</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">SMP</a>
+            <a href="index.html">IPM</a>
           </div>
           <ul class="sidebar-menu">
               <li class="menu-header">Dashboard</li>
@@ -97,7 +97,7 @@
       </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2023 <div class="bullet"></div> Made with ❤️ By <a href="#">Hangker Sepanjang</a>
+          Copyright &copy; 2023 <div class="bullet"></div> Made with ❤️ By <a href="{{ route('hangker') }}">Hangker Sepanjang</a>
         </div>
         <div class="footer-right">
         </div>

@@ -62,9 +62,9 @@ Route::get('/guest/terimakasih', [GuestController::class, 'terimakasih'])->name(
 
 Route::post('/guest/pilih', [GuestController::class, 'submit'])->name('guest.submit');
 // Route::post('/guest/logout', [GuestController::class, 'logout'])->name('guest.logout');
-Route::get('hangker', function() {
+Route::get('/hangker', function() {
     return view('hangker');
-});
+})->name('hangker');
 
 
 
