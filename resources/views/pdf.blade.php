@@ -3688,7 +3688,7 @@
             <div class="card" style="height: 250px; width: 250px; margin: 5px; border: 1px solid #000;">
                 <div class="row" style="margin: 5px;">
                     <div class="card-header">
-                        <h4 style="color:#262626">Akun Pemilih {{ $data->asal }}</h4>
+                        <h6 style="color:#262626">Akun Pemilih {{ $data->asal }}</h6>
                     </div>
                     <div class="card-body mb-0" style="margin-bottom: 0;">
                         <div class="form-group mb-0" style="margin-bottom: 0;">
