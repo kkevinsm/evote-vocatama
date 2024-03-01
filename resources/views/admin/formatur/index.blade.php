@@ -64,7 +64,8 @@
                     <thead>
                         <tr>
                             <th style="width: 5%">No</th>
-                            <th style="width: 70%">Nama</th>
+                            <th>Nama</th>
+                            <th>Asal</th>
                             <th>Action</th>
                         </tr>
                     </thead>
@@ -74,6 +75,7 @@
                         <tr>
                             <td><?= $no++ ?></td>
                             <td>{{ $data->nama }}</td>
+                            <td>{{ $data->asal }}</td>
                             <td>
                                 <a href="{{ route('formatur.detail', $data->id) }}" class="btn btn-sm btn-info"
                                         data-bs-toggle="modal" data-bs-target="#detail_modal">Detail</a>
@@ -144,12 +146,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="nama" class="col-sm-3 col-form-label">Role</label>
+                            <label for="asal" class="col-sm-3 col-form-label">Asal</label>
                             <div class="col-sm-9">
-                                <select name="role" class="form-control">
-                                    <option value="ipm">IPM</option>
-                                    <option value="hw">HW</option>
-                                    <option value="ts">TS</option>
+                                <select class="form-control" name="asal">
+                                    <option value="Cabang Sepanjang">Cabang Sepanjang</option>
+                                    <option value="SMA Muhammadiyah 1 Taman">SMA Muhammadiyah 1 Taman</option>
+                                    <option value="Vocatama">Vocatama</option>
+                                    <option value="SMP Muhammadiyah 2 Taman">SMP Muhammadiyah 2 Taman</option>
+                                    <option value="Mts Muhammadiyah 1 Taman">Mts Muhammadiyah 1 Taman</option>
                                 </select>
                             </div>
                         </div>

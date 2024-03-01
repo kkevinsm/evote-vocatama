@@ -22,7 +22,7 @@ class FormaturController extends Controller
 
     public function create(Request $request)
     {
-        // return $request->role;
+        // return $request->asal;
         $request->validate([
             'foto' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -36,7 +36,7 @@ class FormaturController extends Controller
     
         Formatur::create([
             'nama' => $request->nama,
-            'role' => $request->role,
+            'asal' => $request->asal,
             'visi' => $request->visi,
             'misi' => $request->misi,
             'image' => $profileImage,
@@ -49,12 +49,7 @@ class FormaturController extends Controller
     {
         Formatur::where('id', $id)->update([
             'nama' => $request->nama,
-            'email' => $request->email,
-            'ttl' => $request->ttl,
             'asal' => $request->asal,
-            'bidang' => $request->bidang,
-            'telp' => $request->telp,
-            'riwayat' => $request->riwayat,
             'visi' => $request->visi,
             'misi' => $request->misi,
         ]);
