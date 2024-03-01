@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Evote | VOCATAMA</title>
+    <title>Evote | Musycab</title>
     <link rel="icon" type="images/x-icon" href="{{asset('assets/images/evote.png')}}" />
 
     <!-- Scripts -->
