@@ -63,7 +63,7 @@
                         <tr>
                             <th>No</th>
                             <th>Nama</th>
-                            <th>Role</th>
+                            <th>Asal</th>
                             <th>Username</th>
                             <th>Password</th>
                             <th>Action</th>
@@ -152,9 +152,16 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="nama" class="col-sm-3 col-form-label">Role</label>
+                    <label for="nama" class="col-sm-3 col-form-label">Asal</label>
                     <div class="col-sm-9">
-                        <input name="nama" type="text" class="form-control" id="nama" placeholder="Nama" required>
+                        <select class="form-control" name="asal">
+                            <option value="Cabang Sepanjang">Cabang Sepanjang</option>
+                            <option value="SMA Muhammadiyah 1 Taman">SMA Muhammadiyah 1 Taman</option>
+                            <option value="Vocatama">Vocatama</option>
+                            <option value="SMP Muhammadiyah 2 Taman">SMP Muhammadiyah 2 Taman</option>
+                            <option value="Mts Muhammadiyah 1 Taman">Mts Muhammadiyah 1 Taman</option>
+                        </select>
+                        <!-- <input name="asal" type="text" class="form-control" id="nama" placeholder="Nama" required> -->
                     </div>
                 </div>
             </div>
