@@ -48,7 +48,7 @@ Route::middleware(['admin'])->group(function() {
     Route::get('/admin/pemilih/active', [PemilihController::class, 'active'])->name('active');
     Route::get('/admin/pemilih/non-active', [PemilihController::class, 'nonActive'])->name('non-active');
 
-    Route::get('/pemilih/import', [PemilihController::class, 'import'])->name('pemilih.import');
+    Route::post('/pemilih/import', [PemilihController::class, 'import'])->name('pemilih.import');
 });
 
 // Guest
