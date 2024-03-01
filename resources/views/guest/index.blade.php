@@ -13,7 +13,7 @@
 <section class="section">
     <form action="{{ route('guest.ipm') }}" method="POST">
         <div class="section-header" style="color:#262626">
-            <h1  style="color:#262626">E-Vote VOCATAMA</h1>
+            <h1  style="color:#262626">EVOTE IPM SEPANJANG</h1>
             <div class="col">
                 <div class="float-right">
                     <button id="toastr" type="button" class="btn btn-success" onclick="toast()">Submit</button>
