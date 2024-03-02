@@ -26,8 +26,18 @@ class PemilihController extends Controller
 
     public function create(Request $request)
     {
-        $username = rand(100000, 999999);
-        $password = rand(100000, 999999);
+        function generateRandomString($length = 8) {
+            $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            $charactersLength = strlen($characters);
+            $randomString = '';
+            for ($i = 0; $i < $length; $i++) {
+                $randomString .= $characters[random_int(0, $charactersLength - 1)];
+            }
+            return $randomString;
+        }
+
+        $username = generateRandomString(4);
+        $password = generateRandomString(4);
 
         User::create([
             'name' => $request->nama,
