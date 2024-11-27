@@ -22,6 +22,15 @@ class UserSeeder extends Seeder
             'password' => Hash::make('secret'),
             'created_at' => now(),
             'updated_at' => now()
-        ]);
+        ],
+        [
+            'id' => 2,
+            'name' => 'user',
+            'email' => 'user@softui.com',
+            'password' => Hash::make('secret'),
+            'created_at' => now(),
+            'updated_at' => now()
+        ],
+    );
     }
 }

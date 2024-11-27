@@ -23,11 +23,11 @@ Route::get('/', function () {
     return view('auth.login');
 })->name('welcome');
 
-Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
+// Route::post('/login', [AdminAuthController::class, 'postLogin'])->name('adminLoginPost');
 Auth::routes();
 
 // Admin
-Route::middleware(['admin'])->group(function() {
+Route::middleware(['admin'])->group(function () {
     Route::resource('/admin', AdminController::class);
 
     Route::get('/admin/formatur/index', [FormaturController::class, 'index'])->name('formatur.index');
@@ -38,8 +38,6 @@ Route::middleware(['admin'])->group(function() {
 
     Route::post('/formatur/import', [FormaturController::class, 'import'])->name('formatur.import');
 
-    
-    
     Route::get('/admin/pemilih/index', [PemilihController::class, 'index'])->name('pemilih.index');
     Route::get('/admin/pemilih/detail/{id}', [PemilihController::class, 'detail'])->name('pemilih.detail');
     Route::post('/admin/pemilih/tambah', [PemilihController::class, 'create'])->name('pemilih.tambah');
@@ -51,20 +49,32 @@ Route::middleware(['admin'])->group(function() {
     Route::post('/pemilih/import', [PemilihController::class, 'import'])->name('pemilih.import');
 });
 
-// Guest
+// Guest IPM
 Route::get('/guest/ipm', [GuestController::class, 'ipm'])->name('guest.index');
 Route::post('/guest/pilih/ipm', [GuestController::class, 'pilihipm'])->name('guest.pilih.ipm');
+
+// Guest HW
+Route::get('/guest/hw', [GuestController::class, 'hw'])->name('guest.hw');
+Route::post('/guest/pilih/hw', [GuestController::class, 'pilihhw'])->name('guest.pilih.hw');
+
+// Guest TS
+Route::get('/guest/ts', [GuestController::class, 'ts'])->name('guest.ts');
+Route::post('/guest/pilih/ts', [GuestController::class, 'pilihts'])->name('guest.pilih.ts');
+
+// Guest Terimakasih
 Route::get('/guest/terimakasih', [GuestController::class, 'terimakasih'])->name('terimakasih');
 
+// Guest ketika pilih  endiri
 Route::post('/guest/pilih', [GuestController::class, 'submit'])->name('guest.submit');
 // Route::post('/guest/logout', [GuestController::class, 'logout'])->name('guest.logout');
-Route::get('/hangker', function() {
+
+// Hangker Profile
+Route::get('/hangker', function () {
     return view('hangker');
 })->name('hangker');
 
-
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
+// Export Kartu Pemilih
 Route::get('/admin/pemilih/export/view', [PemilihController::class, 'view'])->name('pemilih.pdf');
+
+// Route Home dari default Laravel
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

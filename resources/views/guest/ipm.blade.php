@@ -11,7 +11,7 @@
 
 @section('content')
 <section class="section">
-    <form action="{{ route('guest.submit') }}" method="POST">
+    <form action="{{ route('guest.pilih.ipm') }}" method="POST">
         <div class="section-header" style="color:#262626">
             <h1  style="color:#262626">Pilih Calon Formatur IPM SEPANJANG</h1>
             <div class="col">
@@ -93,8 +93,9 @@
     //Menghitung
     function checkSelected() {
         var checkboxes = document.getElementsByName('category[]');
-        var count = 0;
+        var count = 9;
 
+        console.log(count);
         for (var i = 0; i < checkboxes.length; i++) {
             if (checkboxes[i].checked) {
                 count++;
@@ -103,7 +104,7 @@
 
         var submitButton = document.getElementById('submitVote');
 
-        if (count === 9) {
+        if (count >= 9) {
             submitButton.disabled = false;
             document.getElementById("toastr").classList.add("hidden");
             document.getElementById("submitVote").classList.remove("hidden");
