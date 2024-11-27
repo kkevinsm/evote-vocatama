@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <link rel="shortcut icon" href="{{asset('public/assets/img/favicon.ico')}}">
-  <title>Evote | Musycab</title>
+  <title>Evote | Vocatama</title>
   <link rel="icon" type="images/x-icon" href="{{asset('public/assets/images/evote.png')}}" />
 
   <!-- General CSS Files -->

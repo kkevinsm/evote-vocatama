@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>Evote | Musycab</title>
+  <title>Evote | Vocatama</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -50,7 +50,7 @@
       <div class="main-sidebar sidebar-style-2">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Evote IPM SEPANJANG</a>
+            <a href="index.html">Evote Vocatama</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">EVOTE</a>
@@ -83,7 +83,7 @@
                   <div class="card-stats-title">Statistik</div>
                   <div class="card-stats-items">
                     <div class="card-stats-item">
-                      <div class="card-stats-item-count">11</div>
+                      <div class="card-stats-item-count">12</div>
                       <div class="card-stats-item-label">Calon</div>
                     </div>
                     <div class="card-stats-item">
